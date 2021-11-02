@@ -8,39 +8,58 @@
   </head>
 <body>
     <div class="ui icon secondary pointing menu" id="nav">
-        <a class="active item" id="text">
-            <i class="home icon" id="text"></i>
+        <a class="animated fade item" id="text">
+          <div class="ui animated fade basic secondary button" id="text" tabindex="0">
+            <div class="hidden content" id="text">Home</div>
+            <div class="visible content" id="text">
+              <i class="home icon"></i>
+            </div>
+          </div>
         </a>
-        <a class="item" id="text">
-          Resume
+        <a class="animated fade item" id="text">
+          <div class="ui animated fade basic secondary button" id="text" tabindex="0">
+            <div class="hidden content" id="text">Resume</div>
+            <div class="visible content" id="text">
+              <i class="file alternate outline icon"></i>
+            </div>
+          </div>
         </a>
-        <a class="item" id="text">
-          Projects
+        <a class="animated fade item" id="text">
+          <div class="ui animated fade basic secondary button" tabindex="0">
+            <div class="hidden content" id="text">Projects</div>
+            <div class="visible content" id="text">
+              <i class="code branch icon" id="text"></i>
+            </div>
+          </div>
         </a>
         <div class="right menu" id="text">
-        <div class="ui vertical teal animated button" id="userB">
-            <div class="hidden content">Ramani</div>
-            <div class="visible content">Kaushik</div>
-          </div>
+          <a class="animated item" id="text">
+            <div class="ui teal animated button" tabindex="0" id="text">
+              <div class="hidden content" id="text">Ramani</div>
+              <div class="visible content">
+                Kaushik
+              </div>
+            </div>
+          </a>
       </div>
     </div>
       <div class="ui container">
 
-        <div class="ui card">
+        <div class="ui card" style="background-color: rgba(0, 0, 0, 0);">
           <div class="image">
             <img src="avatar.png">
           </div>
-          <div class="content">
+          <div class="content" style="background-color: rgb(255, 255, 255);">
             <a class="header">Kaushik</a>
             <div class="meta">
               <span class="date">Software Engineer</span>
             </div>
           </div>
-          <div class="extra content">
-            <button class="circular ui icon button">
+          <div class="extra content" style="background-color: rgb(255, 255, 255);">
+            <button id="gitbutton" class="circular ui icon button">
               <i class="github icon"></i>
             </button>
-            <button class="ui circular linkedin icon button">
+            <button id="linkedinbutton" class="ui circular linkedin icon button">
               <i class="linkedin icon"></i>
             </button>
           </div>
