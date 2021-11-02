@@ -24,4 +24,13 @@
     background-color: rgba(0, 0, 0, 0.404);
     padding-top: 25px;
     padding-bottom: 25px;
+    padding-left: 25px;
+    border-radius: 25px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.card{
+    float: left;
+    
 }
