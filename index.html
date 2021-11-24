@@ -9,7 +9,7 @@
 <body>
     <div class="ui icon secondary pointing menu" id="nav">
         <a class="animated fade item" id="text">
-          <div class="ui animated fade basic secondary button" id="text" tabindex="0">
+          <div class="ui animated fade basic secondary button" id="text" tabindex="0" data-content="You are here">
             <div class="hidden content" id="text">Home</div>
             <div class="visible content" id="text">
               <i class="home icon"></i>
@@ -45,7 +45,7 @@
     </div>
       <div class="ui container" id="container">
 
-        <div class="ui card" style="background-color: rgba(0, 0, 0, 0); float: left;">
+        <div class="ui card" style="background-color: rgba(20, 193, 216, 0.247); float: left;">
           <div class="image">
             <img src="avatar.png">
           </div>
@@ -56,22 +56,44 @@
             </div>
           </div>
           <div class="extra content" style="background-color: rgb(255, 255, 255);">
-            <button id="gitbutton" class="circular ui icon button">
+            <a id="gitbutton" class="circular ui icon button" href="https://github.com/kaurama99" target="_blank">
               <i class="github icon"></i>
-            </button>
-            <button id="linkedinbutton" class="ui circular linkedin icon button">
+            </a>
+            <a id="linkedinbutton" class="ui circular linkedin icon button" href="https://www.linkedin.com/in/kaushikramani/" target="_blank">
               <i class="linkedin icon"></i>
-            </button>
+            </a>
           </div>
         </div>
 
         <h2 class="ui center aligned header" id="h2">
             Hey there!
-            <h3 class="ui center aligned header" id="h3">I'm Kaushik! Welcome to my website.</h3>
-
+            <h3 class="ui center aligned header" id="h3">I'm Kaushik! Welcome to my website.<br></h3>
+            <h3 class="ui left aligned header" id="h4">I am currently pursuing a degree in 
+              Software Engineering at Ontario Tech University. I absolutely love designing and developing web applications.  <br>
+              I spend most of my time gaming but I do enjoy the occasional ride in biking trails; I also love tinkering with computer hardware. <br> 
+              My strengths include a high level of computer literacy as I am someone who is facinated by all types of technologies, from computers to electronics.
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div style="text-align: right; padding-right: 25px;">
+              <i class="node js icon"></i>
+              <i class="css3 icon"></i>
+              <i class="android white icon"></i>
+              <i class="gamepad icon"></i>
+            </div>
+            </h3>
+            
           </h2>
       </div>
 </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script type="text/javascript">
+    $('.ui.animated.fade.basic.secondary.button')
+      .popup()
+    ;
+    </script>
 </html>
