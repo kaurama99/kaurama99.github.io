@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="background.css"/>
     <link rel="stylesheet" href="style.css"/>
     <meta charset="utf-8"/>
+    <title>Kaushik Github.io</title>
   </head>
 <body>
     <div class="ui icon secondary pointing menu" id="nav">
@@ -16,7 +17,7 @@
             </div>
           </div>
         </a>
-        <a class="animated fade item" id="text">
+        <a class="animated fade item" id="resume">
           <div class="ui animated fade basic secondary button" id="text" tabindex="0">
             <div class="hidden content" id="text">Resume</div>
             <div class="visible content" id="text">
@@ -68,9 +69,9 @@
         <h2 class="ui center aligned header" id="h2">
             Hey there!
             <h3 class="ui center aligned header" id="h3">I'm Kaushik! Welcome to my website.<br></h3>
-            <h3 class="ui left aligned header" id="h4">I am currently pursuing a degree in 
+            <h3 class="ui left aligned header" id="h4">I am currently pursuing a degree in
               Software Engineering at Ontario Tech University. I absolutely love designing and developing web applications.  <br>
-              I spend most of my time gaming but I do enjoy the occasional ride in biking trails; I also love tinkering with computer hardware. <br> 
+              I spend most of my time gaming but I do enjoy the occasional ride in biking trails; I also love tinkering with computer hardware. <br>
               My strengths include a high level of computer literacy as I am someone who is facinated by all types of technologies, from computers to electronics.
               <br>
               <br>
@@ -85,15 +86,98 @@
               <i class="gamepad icon"></i>
             </div>
             </h3>
-            
+
           </h2>
+
+          <div id="resumeModal" class="ui longer modal">
+            <div class="header"><i class="file alternate icon"></i>My Work Experience</div>
+            <div class="scrolling content">
+              <div class="ui feed">
+                  <div class="event">
+                    <div class="label">
+                      <i class="code icon"></i>
+                    </div>
+                    <div class="content">
+                      <div class="date">
+                        April to August 2021
+                      </div>
+                      <div class="summary">
+                        Intern at <a>Monsters Aliens Robots Zombies</a> as a Pipeline developer 
+                      </div>
+                      <div class="extra text">
+                        <p>
+                        ● Successfully automated webhooks using Python and improved overall efficiency by 100% <br>
+                        <br>● Developed and maintained a support pipeline from end to end<br>
+                        <br>● Collaborated with senior VFX supervisors to develop new Python tools and workflows<br>
+                        <br>● Contributed to the development and deployment of the new main pipeline<br>
+                        <br>● Helped with testing and quality analysis of new tools<br>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event">
+                    <div class="label">
+                      <i class="code icon"></i>
+                    </div>
+                    <div class="content">
+                      <div class="date">
+                        May to August 2020
+                      </div>
+                      <div class="summary">
+                        Intern at <a>Stereo D</a> as a Systems administrator
+                      </div>
+                      <div class="extra text">
+                        ● Deployed and maintained several workstation Virtual Machines using VSphere in 2 weeks for remote access for 200
+                        employees during the COVID-19 pandemic <br>
+                        <br>● Developed a self-service application to manage users and groups in active directory which improved overall efficiency for
+                        my team by alleviating recurring tickets by 40% regarding user account issues<br>
+                        <br>● Contributed to investigations of problems and faults concerning the installation of hardware and/or software as required,
+                        and confirmed the correct working of the installations in a remote environment<br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event">
+                    <div class="label">
+                      <i class="code icon"></i>
+                    </div>
+                    <div class="content">
+                      <div class="date">
+                        May 2018 to August 2019
+                      </div>
+                      <div class="summary">
+                        Intern at <a>Stereo D</a> as a Frontend developer
+                      </div>
+                      <div class="extra text">
+                        ● Frontend and Programming lead in the Full-stack project which works as a folder management tool complete with a
+                        responsive user interface using SemanticUI and Bootstrap CSS frameworks<br>
+                        <br>● Built a Web presence from the ground up -- from concept, navigation, layout and programming to UX using NodeJS and
+                        ExpressJS which drastically improved overall efficiency for my team by reducing tickets regarding folder creation by 100%
+                        as it was completely automated<br>
+                        <br> ● Developed a REST API which POST/GET queries from a MongoDB database for the web presence to function seamlessly<br>
+                        <br>● Wrote PowerShell scripts that executes tasks posted to the MongoDB server like folder creation<br>
+                        <br>● Added authorization and authentication for the web application using PassportJS which interacted with an Active Directory
+                        server<br>
+                        <br>● Deployed the application using Docker which makes the application very scalable as new containers can be deployed with ease
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
       </div>
 </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <script type="text/javascript">
     $('.ui.animated.fade.basic.secondary.button')
-      .popup()
-    ;
+      .popup();
+
+
+    $('#resume').click(function(){
+      $('#resumeModal')
+        .modal('show')
+      ;
+    });
     </script>
 </html>
